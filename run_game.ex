@@ -12,13 +12,17 @@ defmodule Item do
     @callback effects() :: [String.t]
 end
 
-defmodule Potion do
+defmodule StrengthPotion do
+    @doc """
+    This potion makes you stronger!
+    """
     @behaviour Item
     def name do
-        "Potion"
+        "Strength"
     end
     def effects do
         ["a list of effects", "makes you huge", "makes you green"]
     end
 end
 
+player = %{}
