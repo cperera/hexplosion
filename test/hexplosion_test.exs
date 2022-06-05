@@ -5,4 +5,10 @@ defmodule HexplosionTest do
   test "greets the world" do
     assert Hexplosion.hello() == :world
   end
+
+  test "has a strength potion" do
+    assert true
+  end
+
+  doctest Game
 end

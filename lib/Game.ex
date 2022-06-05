@@ -1,3 +1,5 @@
+require IEx;
+
 defmodule Game do
     def intro do
         IO.puts "Welcome to elixirs-and-hexes!"
@@ -15,6 +17,11 @@ end
 defmodule StrengthPotion do
     @doc """
     This potion makes you stronger!
+    ## Example
+    iex> StrengthPotion.name()
+    Strength
+    iex> StrengthPotion.effects
+    ["a list of effects", "makes you huge", "makes you green"]
     """
     @behaviour Item
     def name do
