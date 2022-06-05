@@ -2,8 +2,8 @@
 I made this game to learn to program in elixir.
 
 # Instructions:
-To list your hexes, press <key>.
-To list your elixirs, pres <key>.
+To list your hexes, press <R>.
+To list your elixirs, press <F>.
 
 Each list maps keystrokes to usables; elixirs additionally show your inventory amount.
 
