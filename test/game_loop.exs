@@ -6,14 +6,17 @@ import Game;
 
 # 2. test Strength Potion
 defmodule StrengthTest do
-  use ExUnit.Case, async: true
+  use ExUnit.Case
   test "is it true" do
     assert true
     "wibble wobble" |> IO.puts 
-    assert false
   end
   test "another test" do
     assert false
+  end
+
+  test "can enter command values" do
+    Game.input("R")
   end
   doctest Game
 end

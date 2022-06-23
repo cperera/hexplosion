@@ -1,3 +1,5 @@
+ExUnit.start()
+import Game
 defmodule HexplosionTest do
   use ExUnit.Case
   doctest Hexplosion
