@@ -8,8 +8,10 @@ defmodule GameLoopTest do
     end
 
     test "noop returns same" do
-        world = %{}
-        assert Game.tick(world, nil) == world
+        world1 = %{}
+        world2 = %{player: nil}
+        assert Game.tick(world1, nil) == world1
+        assert Game.tick(world2, nil) == world2
     end
 
 end

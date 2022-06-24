@@ -8,7 +8,7 @@ defmodule Game do
         IO.puts "Implement Inventory!"
     end
     def tick(state, action) do
-        nil
+        %{}
     end
 end
 
