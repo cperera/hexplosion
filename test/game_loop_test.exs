@@ -8,6 +8,6 @@ defmodule GameLoopTest do
     end
     test "noop returns same" do
         world = %{}
-        Game.tick(world, nil) == world
+        assert Game.tick(world, nil) == world
     end
 end
