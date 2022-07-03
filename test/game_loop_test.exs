@@ -10,4 +10,8 @@ defmodule GameLoopTest do
         world = %{}
         assert Game.tick(world, nil) == world
     end
+
+    test "can enter command values" do
+        "how does a player take an action" |> IO.puts() 
+    end
 end
