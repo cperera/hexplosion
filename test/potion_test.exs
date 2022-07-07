@@ -1,7 +1,7 @@
 # file test.ex # for run_game.ex
 # 1. Start ExUnit
 ExUnit.start()
-import Game;
+import StrengthPotion
 
 # 2. test Strength Potion
 defmodule StrengthTest do
