@@ -18,7 +18,7 @@ end
 
 defmodule Item do
     @callback name() :: String.t
-    @callback effects() :: [String.t]
+    @callback effects() :: map
 end
 
 player = %{}

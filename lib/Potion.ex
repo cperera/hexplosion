@@ -1,5 +1,6 @@
 require IEx;
 import Game;
+import Map
 
 defmodule StrengthPotion do
     @doc """
@@ -15,7 +16,8 @@ defmodule StrengthPotion do
         "Strength"
     end
     def effects do
-        ["a list of effects", "makes you huge", "makes you green"]
+        %{"attributes.strength": 5, "attributes.size": 100, "attributes.color": "green"}
     end
+    # apply potion effects
 end
 

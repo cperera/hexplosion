@@ -19,5 +19,5 @@ defmodule GameLoopTest do
         assert Game.tick(world1, nil) == world1
         assert Game.tick(world2, nil) == world2
     end
-
+    
 end

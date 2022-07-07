@@ -5,11 +5,20 @@ import StrengthPotion
 
 # 2. test Strength Potion
 defmodule StrengthTest do
-  use ExUnit.Case
-  test "Is the potion drinkable?" do
-    "what does it mean to drink a potion" |> IO.puts 
-  end
-  test "the potion strengthens" do
-    "what does it mean to strengthen the player?" |> IO.puts
-  end
+    use ExUnit.Case
+    test "Is the potion drinkable?" do
+        "what does it mean to drink a potion" |> IO.puts 
+    end
+    test "player drinks potion" do
+        playerA = %{
+          inventory: %{StrengthPotion: 1},
+          attributes: %{strength: 1}
+        }
+        initialStrength = playerA.attributes.strength
+        world1 = %{player: playerA}
+        action = %{player: "playerA", target: "StrengthPotion"}
+        Game.tick(world1, action)
+        assert playerA.attributes.strength > initialStrength
+        assert playerA.inventory."StrengthPotion" == 0
+    end
 end
