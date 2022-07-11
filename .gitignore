@@ -24,3 +24,6 @@ hexplosion-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Swap files, from vim.
+*.swp

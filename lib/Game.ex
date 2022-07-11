@@ -11,8 +11,12 @@ defmodule Game do
         if action == nil do
             state
         else
-            %{}
+            #action = %{player: "playerA", target: "StrengthPotion"}
+            if action.target == "StrengthPotion" do
+                state.player.attributes
+            end
         end
+
     end
 end
 
