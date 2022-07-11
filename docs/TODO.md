@@ -5,3 +5,10 @@ However, we are not making Breakout.
  - and some kind of game board
  - use some kind of loop to move opponent player object on the gameboard
  - place potions and scrolls (for hexes) on the board?
+
+________________________________________________________________________
+
+ - actions should be named as verbs, and should be functions
+ - objects should be data
+ - a set of actions that can be performed on a player's data
+ - ex: drink (player, potion) -> (player, potion)
